@@ -1,0 +1,525 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* navigation bar */
+
+header {
+    background-color: #000016;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    background-image: url(./image/293001dee5880414264365c3dc843ae1.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2rem;
+    font-weight: 800;
+    background-size: 100% 50%;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .7s;
+    position: relative;
+}
+
+#navbar-home {
+    background-image: url(./image/293001dee5880414264365c3dc843ae1.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 100%;
+    
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.navbar a::after {
+    content: '';
+    background-color: orange;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    transition: .7s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* home page */
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    background-image: url(./image/solid-navy-blue-concrete-textured-wall.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main h2 {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#vetop {
+    background-image: url(./image/293001dee5880414264365c3dc843ae1.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 800;
+    background-size: 100% 50%;
+    font-size: 1.5rem;
+}
+
+.main h2 span {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-image: url(./image/293001dee5880414264365c3dc843ae1.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 100% 50%;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.main h3 {
+    color: #f0f0f0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.main-btn {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 10px;
+    color: #f0f0f0;
+    margin-top: 5px;
+    transition: .7s ease;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.main-btn:hover {
+    color: orange;
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.icons a {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 5px;
+    transition: .7s;
+}
+
+.icons a:hover {
+    color: orange;
+}
+
+/* services */
+
+.services {
+    min-height: 100vh;
+}
+
+.title {
+    color: orange;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 240px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    transition: .7s ease;
+
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: orange;
+    font-size: 2.5rem;
+}
+
+.info h2 {
+    color: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.info p {
+    letter-spacing: 1px;
+    color: #000016;
+}
+
+/* projects */
+
+
+.project {
+    background-image: url(./image/black-grain-surface-texture-with-lights_125540-948.avif);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card {
+    border: 2px solid orange;
+    border-radius: 10px;
+    width: 240px;
+    overflow: hidden;
+    background-color: white;
+    margin: 20px;
+    transition: .7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-img {
+    opacity: 0.9;
+}
+
+.project-img img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.project-p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #000016;
+    margin-bottom: 10px;
+}
+
+.project-info strong {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-info span {
+    color:orange;
+}
+
+.more-details {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.contact .info p {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+/* footer */
+
+footer {
+    background-color: #000016;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    .main {
+        width: 100%;
+    }
+    .main h2 {
+        color: #f0f0f0;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .main h2 span {
+        font-size: 1.6rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+        border-radius: 10px;
+        transition: .7s ease;
+    
+    }
+
+    .project-card {
+        border: 2px solid orange;
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        margin: 20px 0;
+        transition: .7s ease;
+    }
+    
+
+    footer {
+        padding: 10px 10px;
+    }
+
+    footer p {
+        color: #f0f0f0;
+        font-size: 1.3rem;
+    }
+
+    footer .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    footer .icons a {
+        font-size: 1.2rem;
+    }
+    #vetop {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 25px 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        font-size: 2.3rem;
+    }
+
+    section{
+        padding: 100px 30px;
+    }
+
+    .main {
+        width: 100%;
+    }
+    .main h2 {
+        color: #f0f0f0;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+
+    .main h2 span {
+        font-size: 3.5rem;
+    }
+
+    .main h3 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-btn {
+        margin-bottom: 20px;
+        padding: 20px 25px;
+        font-size: 1.6rem;
+    }
+
+    .icons a {
+        font-size: 2rem;
+        margin-right: 20px;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 400px;
+        margin: 20px 0 30px;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+        border-radius: 10px;
+        transition: .7s ease;
+    }
+
+    .icon {
+        color: orange;
+        font-size: 3rem;
+    }
+    
+    .info h2 {
+        color: orange;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .info p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: #000016;
+        font-weight: 600;
+    }
+
+    .project-card {
+        border: 2px solid orange;
+        border-radius: 10px;
+        width: 400px;
+        overflow: hidden;
+        background-color: white;
+        margin: 20px 0 30px;
+        transition: .7s ease;
+    }
+
+    .project-p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #000016;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    
+    .project-info strong {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .project-info span {
+        color:orange;
+        font-size: 1.5rem;
+    }
+    
+    .more-details {
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+
+    .contact .cards {
+        margin-bottom: 30px;
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    .contact .info p {
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+    
+    footer {
+        background-color: #000016;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer p {
+        color: #f0f0f0;
+        font-size: 1.8rem;
+    }
+    #vetop {
+        font-size: 1.8rem;
+    }
+
+}
